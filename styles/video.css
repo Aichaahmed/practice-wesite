@@ -1,0 +1,124 @@
+.video-grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   column-gap: 15px;
+   row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+   .video-grid{
+      grid-template-columns: 1fr 1fr;
+   }
+}
+@media (min-width: 751px) and (max-width:999px){
+   .video-grid{
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+}
+
+@media (min-width: 1000px){
+   .video-grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+}
+
+
+
+.thumbnail{
+  width: 100%;
+  cursor: pointer;
+}
+.profile-pic{
+   width: 36px;
+   border: none;
+   border-radius: 18px;
+}
+
+.video-title{ 
+   font-size: 14px;
+   font-weight: bold;
+   line-height: 20px;
+   margin-bottom: 10px;
+   margin-top: 0px;
+   cursor: pointer;
+}
+.video-title-link,
+.video-author-link{
+   color: black;
+   text-decoration: none;
+}
+.video-stats,
+.video-author{
+   font-size: 12px;
+   color: rgb(92, 92, 92);
+   margin-bottom: 5px;
+   margin-top: 0px;
+}
+.video-author{
+   cursor: pointer;
+}
+
+
+.channel-picture{
+   display: inline-block;
+   width: 36px;
+   vertical-align: top;
+   cursor: pointer;
+   position: relative;
+}
+.channel-picture .tooltip{
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 200px;
+   height: 64px;
+   border-radius: 2px;
+   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+   pointer-events: none;
+   white-space: nowrap;
+   opacity: 0;
+   transition: opacity 1s;
+   position: absolute;
+   bottom: -80px;
+}
+.channel-picture:hover .tooltip{
+   opacity: 1;
+}
+.video-author-tooltip{
+   
+   font-size: 12px;
+   font-weight: bolder;
+}
+.profile-pic-tooltip{
+   width: 44px;
+   border: none;
+   border-radius: 22px;
+    margin-right: 10px;
+}
+.subscribers-number{
+   font-size: 12px;
+
+}
+.video-info{
+   display: inline-block;
+   width: 250px;
+   vertical-align: top;
+}
+.thumbnail-row{ 
+   margin-bottom: 8px;
+   position: relative;
+}
+
+
+.video-time{
+   background-color: black;
+   color: white;
+   position: absolute;
+   bottom: 8px;
+   right: 5px;
+   font-size: 12px;
+   font-weight: 500;
+   border-radius: 3px;
+   padding: 3px;
+}
